@@ -25,7 +25,7 @@
       deleteTodoItem(id) {
         axios.delete('https://jsonplaceholder.typicode.com/todos/${id})')
                 .then(response => {
-                  this.todos = this.todos.filter(todo => todo.id !== id)
+                  this.todos = this.todos.filter(todo => todo.id !== id);
                 })
       },
       addTodoItem(newTodo) {
